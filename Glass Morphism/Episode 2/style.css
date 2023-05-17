@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #091921;
+    overflow: hidden;
+}
+
+.circle
+{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(#e91363,#ffc107);
+    border-radius: 50%;
+    animation: animate 20s ease-in-out infinite;
+}
+
+@keyframes animate 
+{
+    0%,100%
+    {
+        transform: translateX(-700px);
+    }
+    50%
+    {
+        transform: translateX(700px);
+    }
+}
+
+.glass
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass .layer
+{
+    position: relative;
+    width: 30px;
+    height: 100vh;
+    margin: 1px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(15px);
+
+}
+
+.glass .layer:nth-child(4n+1)
+{
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(15px);
+}
+
+.glass .layer:nth-child(4n+2)
+{
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(25px);
+}
+
+.glass .layer:nth-child(4n+3)
+{
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(20px);
+}
+
+.glass .layer:nth-child(4n+4)
+{
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(50px);
+}
