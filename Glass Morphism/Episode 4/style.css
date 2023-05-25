@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body
+{
+    background-image: url("Images/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box
+{
+    height: 600px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+.top
+{
+    transition: 1s ease-in-out;
+}
+
+.box .container:hover .top
+{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    margin-bottom: 50px;
+    transition: 1s ease-in-out;
+}
+
+.box .container:hover .logo
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+span
+{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+h1
+{
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-area
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.input
+{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 1s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+
+::-webkit-input-placeholder
+{
+    color: #fff;
+}
+
+i
+{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+
+.submit
+{
+    border: none;
+    height: 33px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    transition: 1s ease-in-out;
+}
+
+.submit:hover,input:hover
+{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2)
+}
+
+.bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.left
+{
+    display: flex;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+
+}
